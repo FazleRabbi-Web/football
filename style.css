@@ -7,12 +7,15 @@ body{
 a{
     text-decoration: none;
     color: white;
+    padding: 5px 15px;
+    transition: .7s;
 }
 /* navbar  */
 
 nav{
     display: flex;
     width: 100%;
+    margin-top: 20px;
     justify-content: space-between;
     align-items: center;
     position: absolute;
@@ -24,6 +27,10 @@ nav{
 .menu li{
     list-style: none;
     padding: 0px 15px;
+}
+.menu ul li a:hover{
+    color: black;
+    background-color: rgb(255, 255, 255);
 }
 .login{
     margin-right: 250px;
