@@ -10,38 +10,17 @@ a{
     padding: 5px 15px;
     transition: .7s;
 }
-/* navbar  */
 
-nav{
-    display: flex;
-    width: 100%;
-    margin-top: 20px;
-    justify-content: space-between;
-    align-items: center;
-    position: absolute;
-}
-.menu ul{
-    display: flex;
-    margin-left: 230px;
-}
-.menu li{
-    list-style: none;
-    padding: 0px 15px;
-}
-.menu ul li a:hover{
-    color: black;
-    background-color: rgb(255, 255, 255);
-}
-.login{
-    margin-right: 250px;
-}
-/* top page  */
+
+/* --------------------------- top page section---------------  */
+
 
 .top-page{
     background-color:#2D25A0 ;
     display: flex;
     justify-content: space-between;
     width: 100%;
+    padding-bottom: 100px;
 }
 .title{
     width: 50%;
@@ -74,10 +53,15 @@ nav{
     width: 550px;
 }
 
+
+/* ------------------------- top page section media query for Mobile ---------------------  */
+
+
 @media(max-width: 688px){
     .top-page{
         width: 100%;
         flex-direction: column;
+        padding-bottom: 40px;
     }
     .title{
         width: 90%;
@@ -86,6 +70,10 @@ nav{
     }
     .title h1{
         font-size: 30px;
+        padding-left: 50px
+    }
+    .button{
+        margin-left: 50px;
     }
     .title img{
         margin-top: 50px;
@@ -93,9 +81,15 @@ nav{
     }
 
 }
+
+
+/* ------------------------- top page section media query for ipad ---------------------  */
+
+
 @media only screen and (min-width: 689px) and (max-width:992px){
     .top-page{
         width: 100%;
+        padding-bottom: 50px;
     }
     .title{
         width: 90%;
@@ -111,7 +105,11 @@ nav{
     }
 }
 
-/* player details  */
+
+
+/*------------------------- Player details section ------------------- */
+
+
 
 .players{
     display: grid;
@@ -130,8 +128,7 @@ nav{
     margin-bottom: 0;
 }
 .player img{
-    width: 300px;
-    height: 256px;
+    width: 100%;
     border-radius: 8px;
 }
 .player h1{
@@ -145,6 +142,9 @@ nav{
     color: #6C6C6C;
     padding-right: 8px;
 }
+
+/*------------------------- Player details section Media query for Mobile------------------- */
+
 @media(max-width: 688px){
     .players{
         width: 90%;
@@ -160,6 +160,9 @@ nav{
         padding-right: 5px;
     }
 }
+
+/*------------------------- Player details section Media query for ipad------------------- */
+
 @media only screen and (min-width: 688px) and (max-width:992px){
     .players{
         width: 90%;
@@ -176,92 +179,19 @@ nav{
         padding-right: 5px;
     }
 }
-/* match highlight section */
 
-.highlight{
-    display: flex;
-    margin-bottom: 80px;
+
+
+/* ----------------------------- top players of the week and next match time  ------------------------------ */
+
+
+
+.top-player{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 70px;
 }
-.match-details{
-    width: 40%;
-    margin-left: 320px;
-    margin-top: 140px;
-    margin-right: 35px;
-}
-.match-details h2{
-    font-size: 40px;
-    font-weight: 700;
-    padding-top: 20px;
-    margin-bottom: 15px;
-}
-.match-details p{
-    font-size: 16px;
-    color:#6C6C6C;
-}
-.match-video{
-    width: 560px;
-    margin-top: 165px;
-    padding-left: 40px;
-    margin-right: 340px;
-}
-@media(max-width: 688px) {
-    .highlight{
-        width:90%;
-        flex-direction: column;
-        margin: 0;
-    }
-    .match-details{
-        width: 100%;
-        margin: 0px 10px ;
-        padding-left: 5px;
-    }
-    .match-details h2{
-        font-size: 30px;
-        
-    }
-    .match-video{
-        width: 90%;
-        margin: 0px;
-    }
-    .match-video video{
-        width: 300px;
-        padding: 0px;
-        margin: 0px;
-    }
-    .match-video small{
-        font-size: 11px;
-        margin: 0px;
-    }
-}
-@media only screen and (min-width: 689px) and (max-width:992px){
-    .highlight{
-        width:90%;
-        margin: 0;
-    }
-    .match-details{
-        width: 100%;
-        margin: 0px 0px 0px 30px;
-        padding-left: 5px;
-    }
-    .match-details h2{
-        font-size: 30px;
-    }
-    .match-video{
-        width: 90%;
-        margin: 0px;
-        margin-top: 70px;
-    }
-    .match-video video{
-        width: 300px;
-        padding: 0px;
-        margin: 0px;
-    }
-    .match-video small{
-        font-size: 14px;
-        margin: 0px;
-    }
-}
-/* top players of the week and next match time */
 .section-title{
     text-align: center;
     color: white;
@@ -297,7 +227,7 @@ nav{
     transition:0.5s;
 }
 .layer:hover{
-    background: rgba(112, 126, 209, 0.7);
+    background: rgba(45, 37, 160, .7);
 }
 .layer h3{
     width: 100%;
@@ -327,12 +257,16 @@ nav{
     margin-right: 320px;
 }
 .schedule img{
-    width: 600px;
+    width: 100%;
     display: block;
 }
+
+/* ----------------------------- top players of the week and next match time Media query for Mobile ------------------------------ */
+
 @media(max-width: 688px){
     .top-player{
         width: 90%;
+        display: flex;
         flex-direction: column;
         margin: 0;
     }
@@ -368,9 +302,13 @@ nav{
     }
 
 }
+
+/* ----------------------------- top players of the week and next match time Media query for ipad ------------------------------ */
+
 @media only screen and (min-width: 689px) and (max-width:992px){
     .top-player{
         width: 90%;
+        display: flex;
         flex-direction: column;
         margin: 30px 10px 30px 30px;
     }
@@ -405,7 +343,100 @@ nav{
         margin-top: 0px;
     }
 }
-/* support start  */
+
+/* ----------------------------- match highlight section  ---------------------------- */
+
+.highlight{
+    display: flex;
+    margin-bottom: 80px;
+}
+.match-details{
+    width: 40%;
+    margin-left: 320px;
+    margin-top: 140px;
+    margin-right: 35px;
+}
+.match-details h2{
+    font-size: 40px;
+    font-weight: 700;
+    padding-top: 20px;
+    margin-bottom: 15px;
+}
+.match-details p{
+    font-size: 16px;
+    color:#6C6C6C;
+}
+.match-video{
+    width: 560px;
+    margin-top: 165px;
+    padding-left: 40px;
+    margin-right: 340px;
+}
+
+/* ----------------------------- match highlight section Media query for Mobile  ---------------------------- */
+
+@media(max-width: 688px) {
+    .highlight{
+        width:90%;
+        flex-direction: column;
+        margin: 0;
+    }
+    .match-details{
+        width: 100%;
+        margin: 0px 10px ;
+        padding-left: 5px;
+    }
+    .match-details h2{
+        font-size: 30px;
+        
+    }
+    .match-video{
+        width: 90%;
+        margin: 0px;
+    }
+    .match-video video{
+        width: 300px;
+        padding: 0px;
+        margin: 0px;
+    }
+    .match-video small{
+        font-size: 11px;
+        margin: 0px;
+    }
+}
+
+/* ----------------------------- match highlight section Media query for ipad  ---------------------------- */
+
+@media only screen and (min-width: 689px) and (max-width:992px){
+    .highlight{
+        width:90%;
+        margin: 0;
+    }
+    .match-details{
+        width: 100%;
+        margin: 0px 0px 0px 30px;
+        padding-left: 5px;
+    }
+    .match-details h2{
+        font-size: 30px;
+    }
+    .match-video{
+        width: 90%;
+        margin: 0px;
+        margin-top: 70px;
+    }
+    .match-video video{
+        width: 300px;
+        padding: 0px;
+        margin: 0px;
+    }
+    .match-video small{
+        font-size: 14px;
+        margin: 0px;
+    }
+}
+
+/* --------------------------------- Team Support Section ---------------------------------- */
 
 .support-sec{
     background-color: #2D25A0;
@@ -440,12 +471,16 @@ nav{
     grid-template-columns: 350px;
 }
 .submit{
-    font-size: 20px;
-    font-weight: 600;
-    margin-left: 940px;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    margin-left: 972px;
     margin-top: 25px;
     padding: 5px 20px;
 }
+
+/* --------------------------------- Team Support Section Media query for Mobile ---------------------------------- */
+
 @media (max-width: 688px){
     .support-sec{
         width: 90%;
@@ -483,6 +518,9 @@ nav{
         margin-left: 10px;
     }
 }
+
+/* --------------------------------- Team Support Section Media query for ipad ---------------------------------- */
+
 @media only screen and (min-width: 689px) and (max-width:992px){
     .support-sec{
         width: 100%;
@@ -518,15 +556,15 @@ nav{
         margin-left: 60px;
     }
 }
-/* footer  */
+/* --------------------------------- footer ------------------------------------ */
 
-.footer{
+footer{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.footer img{
+footer img{
     width: 300px;
     margin-top: 50px;
     margin-bottom: 0px;
@@ -537,17 +575,21 @@ nav{
     padding: 10px;
     border-radius: 50%;
 }
-.footer footer{
+footer p{
         font-size: 18px;
+        font-weight: 600;
         margin-top: 10px;
         margin-bottom: 60px;
 }
+
+/* --------------------------------- footer Media query for Mobile------------------------------------ */
+
 @media (max-width: 688px){
-    .footer{
+    footer{
         width:90%;
         margin: 0;
     }
-    .footer img{
+    footer img{
         width: 200px;
         margin-top: 20px;
     }
@@ -555,18 +597,21 @@ nav{
         padding: 5px;
         margin: 10px 5px;
     }
-    .footer footer{
+    footer p{
         font-size: 16px;
         font-weight: 600;
         margin-bottom: 100px;
     }
 }
+
+/* --------------------------------- footer Media query for ipad------------------------------------ */
+
 @media only screen and (min-width: 689px) and (max-width:992px){
-    .footer{
+    footer{
         width:100%;
         margin: 0;
     }
-    .footer footer{
+    footer p{
         font-size: 16px;
         font-weight: 600;
         margin-bottom: 100px;
