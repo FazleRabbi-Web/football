@@ -24,18 +24,17 @@ a{
 }
 .top-page:hover .fa-futbol{
     animation: rotate 1.5s linear;
-    animation-play-state: running;
     animation-iteration-count: infinite;
+    animation-play-state: running;
 }
-@keyframes rotate {
+@keyframes rotate{
     100%{
         transform: rotateZ(360deg);
-
     }
 }
 .title{
     width: 50%;
-    margin-top: 210px;
+    margin-top: 180px;
     margin-left: 300px;
     margin-right: 50px;
     color: white;
@@ -47,7 +46,7 @@ a{
 }
 .button{
     background-color: #E02C6D;
-    padding: 5px 20px;
+    padding: 5px 15px;
     transition: 1s;
 }
 .button:hover{
@@ -55,7 +54,7 @@ a{
 }
 .banner{
     width: 50%;
-    margin-top: 210px;
+    margin-top: 180px;
     margin-bottom: 120px;
     margin-left: 50px;
     margin-right: 150px;
@@ -127,7 +126,7 @@ a{
     grid-template-columns: repeat(3,1fr);
     grid-column-gap: 30px;
     grid-row-gap: 27px;
-    margin-top: 70px;
+    margin-top: 60px;
     margin-left: 380px;
     margin-right: 380px;
 }
@@ -161,7 +160,7 @@ a{
         width: 90%;
         display: flex;
         flex-direction: column;
-        margin: 30px 10px 30px 10px;
+        margin: 60px 10px 0px 14px;
         padding-left: 6px;
     }
     .player{
@@ -180,7 +179,7 @@ a{
         grid-template-columns: repeat(2,1fr);
         grid-column-gap: 30px;
         grid-row-gap: 27px;
-        margin: 30px 10px 30px 20px;
+        margin: 60px 10px 30px 20px;
         padding-left: 20px;
     }
     .player{
@@ -200,8 +199,8 @@ a{
 .top-player{
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
     margin-top: 70px;
+    grid-template-columns: repeat(2,1fr);
 }
 .section-title{
     text-align: center;
@@ -280,6 +279,7 @@ a{
         display: flex;
         flex-direction: column;
         margin: 0;
+        padding-left: 7px;
     }
     .best-players{
         display: flex;
@@ -309,7 +309,8 @@ a{
         width: 100%;
         font-size: 30px;
         padding: 0px;
-        margin-top: 0px;
+        margin-top: 50px;
+        margin-bottom: 50px;
     }
 
 }
@@ -322,6 +323,7 @@ a{
         display: flex;
         flex-direction: column;
         margin: 30px 10px 30px 30px;
+        padding-left: 8.5px;
     }
     .best-players{
         width: 100%;
@@ -391,6 +393,7 @@ a{
         width:90%;
         flex-direction: column;
         margin: 0;
+        padding-left: 7px;
     }
     .match-details{
         width: 100%;
@@ -422,6 +425,7 @@ a{
     .highlight{
         width:90%;
         margin: 0;
+        padding-left: 7px;
     }
     .match-details{
         width: 100%;
