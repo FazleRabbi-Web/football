@@ -1,0 +1,273 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+/* anchor */
+a{
+    text-decoration: none;
+    color: white;
+}
+/* navbar  */
+
+nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+}
+.menu ul{
+    display: flex;
+    margin-left: 230px;
+}
+.menu li{
+    list-style: none;
+    padding: 0px 15px;
+}
+.login{
+    margin-right: 250px;
+}
+/* top page  */
+
+.top-page{
+    background-color:#2D25A0 ;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.title{
+    width: 50%;
+    margin-top: 210px;
+    margin-left: 300px;
+    margin-right: 50px;
+    color: white;
+}
+.title h1{
+    font-size: 64px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.button{
+    background-color: #E02C6D;
+    padding: 5px 20px;
+    transition: 1s;
+}
+.button:hover{
+    background-color: black;
+}
+.banner{
+    width: 50%;
+    margin-top: 210px;
+    margin-bottom: 120px;
+    margin-left: 50px;
+    margin-right: 150px;
+}
+.banner img{
+    width: 550px;
+}
+
+/* player details  */
+
+.players{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 27px;
+    margin-top: 70px;
+    margin-left: 380px;
+    margin-right: 380px;
+}
+.player{
+    padding: 15px;
+    background-color: white;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    margin-bottom: 0;
+}
+.player img{
+    width: 300px;
+    height: 256px;
+    border-radius: 8px;
+}
+.player h1{
+    font-size: 28px;
+    font-weight: 700;
+    color: #18191F;
+    margin: 0;
+}
+.player p{
+    font-size: 16px;
+    color: #6C6C6C;
+    padding-right: 8px;
+}
+
+/* match highlight section */
+
+.container{
+    display: flex;
+    margin-bottom: 80px;
+}
+.match-details{
+    width: 40%;
+    margin-left: 320px;
+    margin-top: 140px;
+    margin-right: 35px;
+}
+.match-details h2{
+    font-size: 40px;
+    font-weight: 700;
+    padding-top: 20px;
+    margin-bottom: 15px;
+}
+.match-details p{
+    font-size: 16px;
+    color:#6C6C6C;
+}
+.match-video{
+    width: 560px;
+    margin-top: 165px;
+    padding-left: 40px;
+    margin-right: 340px;
+}
+
+/* top players of the week and next match time */
+.section-title{
+    text-align: center;
+    color: white;
+    background-color: #2D25A0;
+    font-size: 48px;
+    padding: 5px 15px;
+}
+.best-players{
+    margin-left: 320px;
+    padding-right: 20px;
+}
+.best-player{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+}
+.best-player-grid{
+    position: relative;
+    overflow: hidden;
+}
+.best-player-grid img{
+    width: 100%;
+    display: block;
+}
+.layer{
+    background: (transparent);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition:0.5s;
+}
+.layer:hover{
+    background: rgba(112, 126, 209, 0.7);
+}
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    font-size: 26px;
+    text-align: center;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+.layer:hover h3{
+    text-align: center;
+    bottom: 35%;
+    opacity: 1;
+}
+.match-time{
+    margin-top: 130px;
+    position: relative;
+    overflow: hidden;
+}
+.schedule{
+    padding-left: 20px;
+    margin-right: 320px;
+}
+.schedule img{
+    width: 600px;
+    display: block;
+}
+.team{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+/* support start  */
+
+.support-sec{
+    background-color: #2D25A0;
+    width: 100%;
+    height: 50vh;
+}
+.support{
+    margin-left: 250px;
+    margin-right: 250px;
+}
+.support-title{
+    text-align: center;
+    padding-top: 20px;
+    color: white;
+    font-size: 48px;
+}
+.support-action{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.support-action-1{
+    display: grid;
+    grid-template-columns: repeat(1, 275px);
+    grid-template-rows: 50px 50px 50px; 
+    grid-row-gap:20px;
+    margin-left: 350px;
+    padding-top: 30px;
+}
+.support-action-2{
+    display: grid;
+    grid-template-rows: 250px; 
+    grid-template-columns: 350px;
+}
+.submit{
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 940px;
+    margin-top: 25px;
+    padding: 5px 20px;
+}
+
+/* footer  */
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer img{
+    width: 300px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+.fab{
+    background-color: #d1d7eb;
+    margin: 20px 3px;
+    padding: 10px;
+    border-radius: 50%;
+}
+.footer footer{
+        font-size: 18px;
+        margin-top: 10px;
+        margin-bottom: 60px;
+}
