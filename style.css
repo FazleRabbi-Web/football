@@ -70,8 +70,45 @@ nav{
     margin-left: 50px;
     margin-right: 150px;
 }
-.banner img{
+.title img{
     width: 550px;
+}
+
+@media(max-width: 688px){
+    .top-page{
+        width: 100%;
+        flex-direction: column;
+    }
+    .title{
+        width: 90%;
+        margin: 2%;
+        padding: 0 5px;
+    }
+    .title h1{
+        font-size: 30px;
+    }
+    .title img{
+        margin-top: 50px;
+        width: 100%;
+    }
+
+}
+@media only screen and (min-width: 689px) and (max-width:992px){
+    .top-page{
+        width: 100%;
+    }
+    .title{
+        width: 90%;
+        margin: 4%;
+        padding: 0 5px;
+    }
+    .title h1{
+        font-size: 40px;
+    }
+    .title img{
+        margin-top: 50px;
+        width: 100%;
+    }
 }
 
 /* player details  */
@@ -108,10 +145,40 @@ nav{
     color: #6C6C6C;
     padding-right: 8px;
 }
-
+@media(max-width: 688px){
+    .players{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        margin: 30px 10px 30px 10px;
+        padding-left: 6px;
+    }
+    .player{
+        width: 90%;
+    }
+    .player p{
+        padding-right: 5px;
+    }
+}
+@media only screen and (min-width: 688px) and (max-width:992px){
+    .players{
+        width: 90%;
+        grid-template-columns: repeat(2,1fr);
+        grid-column-gap: 30px;
+        grid-row-gap: 27px;
+        margin: 30px 10px 30px 20px;
+        padding-left: 20px;
+    }
+    .player{
+        width: 90%;
+    }
+    .player p{
+        padding-right: 5px;
+    }
+}
 /* match highlight section */
 
-.container{
+.highlight{
     display: flex;
     margin-bottom: 80px;
 }
@@ -137,7 +204,63 @@ nav{
     padding-left: 40px;
     margin-right: 340px;
 }
-
+@media(max-width: 688px) {
+    .highlight{
+        width:90%;
+        flex-direction: column;
+        margin: 0;
+    }
+    .match-details{
+        width: 100%;
+        margin: 0px 10px ;
+        padding-left: 5px;
+    }
+    .match-details h2{
+        font-size: 30px;
+        
+    }
+    .match-video{
+        width: 90%;
+        margin: 0px;
+    }
+    .match-video video{
+        width: 300px;
+        padding: 0px;
+        margin: 0px;
+    }
+    .match-video small{
+        font-size: 11px;
+        margin: 0px;
+    }
+}
+@media only screen and (min-width: 689px) and (max-width:992px){
+    .highlight{
+        width:90%;
+        margin: 0;
+    }
+    .match-details{
+        width: 100%;
+        margin: 0px 0px 0px 30px;
+        padding-left: 5px;
+    }
+    .match-details h2{
+        font-size: 30px;
+    }
+    .match-video{
+        width: 90%;
+        margin: 0px;
+        margin-top: 70px;
+    }
+    .match-video video{
+        width: 300px;
+        padding: 0px;
+        margin: 0px;
+    }
+    .match-video small{
+        font-size: 14px;
+        margin: 0px;
+    }
+}
 /* top players of the week and next match time */
 .section-title{
     text-align: center;
@@ -207,17 +330,87 @@ nav{
     width: 600px;
     display: block;
 }
-.team{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-}
+@media(max-width: 688px){
+    .top-player{
+        width: 90%;
+        flex-direction: column;
+        margin: 0;
+    }
+    .best-players{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 5px 10px;
+    }
+    .best-player{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .schedule{
+        width: 100%;
+        margin: 0px 10px;
+        padding: 0px;
+    }
+    .match-time{
+        margin-top: 0px;
+    }
+    .schedule img{
+        width: 100%;
+        margin-top: 0;
+        padding-top: 0;
+    }
+    .section-title span{
+        width: 100%;
+        font-size: 20px;
+        padding: 0px;
+        margin-top: 0px;
+    }
 
+}
+@media only screen and (min-width: 689px) and (max-width:992px){
+    .top-player{
+        width: 90%;
+        flex-direction: column;
+        margin: 30px 10px 30px 30px;
+    }
+    .best-players{
+        width: 100%;
+        margin: 5px 0px;
+    }
+    .best-player{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-row-gap: 10px;
+        grid-column-gap: 10px;
+        width: 100%;
+    }
+    .schedule{
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+    .match-time{
+        margin-top: 0px;
+    }
+    .schedule img{
+        width: 100%;
+        margin-top: 0;
+        padding-top: 0;
+    }
+    .section-title span{
+        width: 100%;
+        font-size: 40px;
+        padding: 0px;
+        margin-top: 0px;
+    }
+}
 /* support start  */
 
 .support-sec{
     background-color: #2D25A0;
     width: 100%;
-    height: 50vh;
+    padding-bottom: 50px;
 }
 .support{
     margin-left: 250px;
@@ -253,7 +446,78 @@ nav{
     margin-top: 25px;
     padding: 5px 20px;
 }
-
+@media (max-width: 688px){
+    .support-sec{
+        width: 90%;
+        padding-bottom: 20px;
+        margin: 0px 10px;
+    }
+    .support{
+        margin: 0px ;
+    }
+    .support-title{
+        font-size: 20px;
+        padding-top: 10px;
+        padding-left: 10px;
+        text-align: left;
+    }
+    .support-action{
+        display: flex;
+        flex-direction: column;
+    }
+    .support-action-1{
+        margin: 0px 10px;
+        padding: 0px;
+        grid-template-columns: repeat(1, 280px);
+        grid-template-rows: 30px 30px 30px; 
+        grid-row-gap:10px;
+    }
+    .support-action-2{
+        grid-template-rows: 150px; 
+        grid-template-columns: 280px;
+        margin: 0px 10px;
+        padding-top: 10px;
+    }
+    .submit{
+        margin-top: 15px;
+        margin-left: 10px;
+    }
+}
+@media only screen and (min-width: 689px) and (max-width:992px){
+    .support-sec{
+        width: 100%;
+        padding-bottom: 40px;
+        margin: 0px;
+    }
+    .support{
+        margin: 0px 20px ;
+    }
+    .support-title{
+        font-size: 40px;
+        padding-top: 10px;
+        padding-left: 10px;
+        text-align: center;
+    }
+    .support-action-1{
+        margin: 0px;
+        margin-left: 60px;
+        padding: 0px;
+        grid-template-columns: repeat(1, 280px);
+        grid-template-rows: 30px 30px 30px; 
+        grid-row-gap:25px;
+    }
+    .support-action-2{
+        grid-template-rows: 120px; 
+        grid-template-columns: 280px;
+        margin: 0px;
+        margin-left: 10px;
+        padding-top: 10px;
+    }
+    .submit{
+        margin-top: 25px;
+        margin-left: 60px;
+    }
+}
 /* footer  */
 
 .footer{
@@ -277,4 +541,34 @@ nav{
         font-size: 18px;
         margin-top: 10px;
         margin-bottom: 60px;
+}
+@media (max-width: 688px){
+    .footer{
+        width:90%;
+        margin: 0;
+    }
+    .footer img{
+        width: 200px;
+        margin-top: 20px;
+    }
+    .fab{
+        padding: 5px;
+        margin: 10px 5px;
+    }
+    .footer footer{
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 100px;
+    }
+}
+@media only screen and (min-width: 689px) and (max-width:992px){
+    .footer{
+        width:100%;
+        margin: 0;
+    }
+    .footer footer{
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 100px;
+    }
 }
