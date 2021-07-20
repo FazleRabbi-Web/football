@@ -27,7 +27,11 @@ a{
     animation-iteration-count: infinite;
     animation-play-state: running;
 }
-
+@keyframes rotate{
+    100%{
+        transform: rotateZ(360deg);
+    }
+}
 .title{
     width: 50%;
     margin-top: 180px;
